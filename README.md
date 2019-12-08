@@ -5,6 +5,6 @@
 
 ## CSS形状就该随心所欲
 
-1. [圆形=>西瓜](https://github.com/xiaodongxier/demo/CSS形状就该随心所欲/西瓜.html)
-2. [圆形=>西瓜](https://github.com/xiaodongxier/demo/CSS形状就该随心所欲/三角形.html)
+1. [圆形=>西瓜](https://xiaodongxier.github.io/demo/CSS形状就该随心所欲/西瓜.html)
+2. [正方形=>三角形](https://xiaodongxier.github.io/demo/CSS形状就该随心所欲/三角形.html)
 
