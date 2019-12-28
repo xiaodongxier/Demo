@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://github.xiaodongxier.com/cdn/js/jquery.min.js"></script>
+    <script src="https://github.xiaodongxier.com/cdn/js/jquery.arctext.js"></script>
+    <style>
+        div {
+            width: 400px;
+            margin: 200px auto 0px auto;
+            font-size: 30px;
+            color: darkorange;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <div class="test test1">纯文字拱门之上拱门</div>
+    <div class="test test2">纯文字拱门之下拱门</div>
+    <div class="test test3">纯文字拱门效果加动效</div>
+
+
+    <script>
+        $(".test1").arctext({
+            radius: 20,
+            dir: -1
+        })
+        $(".test2").arctext({
+            radius: 20,
+            dir: 1
+        })
+
+
+        $(function() {
+            mytxt = $('.test3')
+            //初始化
+            mytxt.arctext({
+                radius: 300
+            });
+
+            //修改效果
+            mytxt.arctext('set', {
+                radius: 200,
+                dir: 1,
+                animation: {
+                    speed: 1000
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
