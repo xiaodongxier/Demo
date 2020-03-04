@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+    <style type="text/css">
+    p {
+        color: red;
+    }
+    </style>
+</head>
+<body>
+    <p>P元素1，默认给绑定一个点击事件</p>
+    <p>P元素2，默认给绑定一个点击事件</p>
+    <button class="bt1">点击删除 p 元素</button>
+    <button class="bt2">点击移动 p 元素</button>
+    <script type="text/javascript">
+        var arr ;
+        $(".bt1").click(function(){
+            if(!$("p").length) {
+                return
+            }
+
+            arr = $("p").detach();
+        })
+
+        $(".bt2").click(function(){
+            $(".bt1").append(arr)
+        })
+    </script>
+</body>
+</html>
