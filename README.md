@@ -10,8 +10,6 @@
 
 
 
-
-
 <!-- 自定义部分 -->
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
@@ -31,6 +29,7 @@ var _hmt = _hmt || [];
 </style>
 <script>
     setTimeout(function(){
+        $(".btn").attr("href","baidu.com").html("View on My Blog")
         $(".site-footer").html($("#cnzz_stat_icon_1279211617"))
     },500)
 </script>
