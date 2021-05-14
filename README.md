@@ -29,10 +29,10 @@ var _hmt = _hmt || [];
 </style>
 
 <script>
-    setTimeout(function(){
+    // setTimeout(function(){
         $(".page-header").find("a").hide();
         $(".page-header").append(`<a href="https://github.com/xiaodongxier/Demo" class="btn wyjBtn" target="_blank">View on GitHub</a><a href="http://xiaodongxier.com" class="btn wyjBtn" target="_blank">View on MyBlog</a>`)
         $(".site-footer").html($("#cnzz_stat_icon_1279211617"))
-    },500)
+    // },100)
 </script>
 <!-- 自定义部分 -->
