@@ -27,9 +27,10 @@ var _hmt = _hmt || [];
         text-align: center;
     }
 </style>
+<a href="baidu.com" class="btn">View on My Blog</a><a href="baidu.com" class="btn">View on My Blog</a>
 <script>
     setTimeout(function(){
-        $(".btn").attr("href","baidu.com").html("View on My Blog")
+        // $(".page-header").
         $(".site-footer").html($("#cnzz_stat_icon_1279211617"))
     },500)
 </script>
