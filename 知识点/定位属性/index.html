@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位属性&放大镜</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        div {
+            font-size: 35px;
+            line-height: 80px;
+        }
+
+        .box1 {
+            width: 500px;
+            height: 500px;
+            border: 10px solid #000;
+            background: red;
+        }
+
+        .box2 {
+            width: 300px;
+            height: 300px;
+            border: 10px solid #000;
+            background: blue;
+        }
+
+        .box3 {
+            width: 100px;
+            height: 100px;
+            border: 10px solid #000;
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        box1
+        <div class="box2">
+            box2
+            <div class="box3">
+                box3
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function() {
+            var box1 = document.querySelector(".box1");
+            var box2 = document.querySelector(".box2");
+            var box3 = document.querySelector(".box3");
+            console.log("box1.offsetLeft--->", box1.offsetLeft)
+            console.log("box1.offsetTop--->", box1.offsetTop)
+            console.log("box1.offsetWidth--->", box1.offsetWidth)
+            console.log("box1.offsetHeight--->", box1.offsetHeight)
+            console.log("------------------------------------------")
+            console.log("box2.offsetLeft--->", box2.offsetLeft)
+            console.log("box2.offsetTop--->", box2.offsetTop)
+            console.log("box2.offsetWidth--->", box2.offsetWidth)
+            console.log("box2.offsetHeight--->", box2.offsetHeight)
+            console.log("------------------------------------------")
+            console.log("box3.offsetLeft--->", box3.offsetLeft)
+            console.log("box3.offsetTop--->", box3.offsetTop)
+            console.log("box3.offsetWidth--->", box3.offsetWidth)
+            console.log("box3.offsetHeight--->", box3.offsetHeight)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<div class="h_custom_data" title="优惠券">
+    <style>
+        .gome-coupon {
+            height: 2.453333333333333rem;
+            background-image: url(http://gfs5.gomein.net.cn/wireless/T1EEW4BmW_1RCvBVdK_1125_368.jpg);
+            background-size: 7.5rem auto;
+        }
+
+        .gome-coupon ul {
+            padding: 1rem .3rem 0rem .2rem;
+        }
+
+        .gome-coupon ul li {
+            max-width: 3.3666666666666667rem;
+            max-height: 1.06rem;
+            margin-left: .1rem;
+        }
+    </style>
+</div>
+<div class="gome-flex gome-coupon">
+    <ul>
+        <li cms-action="goupon" cms-attr-id=""><img src="http://gfs7.gomein.net.cn/wireless/T1M.D4BgCT1RCvBVdK_505_159.png" alt="50元"></li>
+        <li cms-action="goupon" cms-attr-id=""><img src="http://gfs7.gomein.net.cn/wireless/T1N.Z4BXbv1RCvBVdK_505_159.png" alt="100元"></li>
+    </ul>
+</div>
+<div>
+    <script>
+        $(function () {
+            var oDate = new Date();
+            var oDay = oDate.getDate();
+            var oHour = oDate.getHours();
+            redUpdate();
+            function redUpdate() {
+                var redQuan = [{
+                    "day": 5,
+                    "morningID": [
+                        "PTBuSXpRVFl6TW1OeVFXTm1sRE56WVdZNVVUTTBRRE14TURNalZqTm1Sek56SW1JNklDWko1MmJ3VjNiakpDTHdvaklsQlhlVTUyYndWM2JqSnllY291cG9uUGFyYW0",
+                        "PTBuSTJFak00UWpONUFUWmhaalo0WUdNaGRqWW1SVFoxRXpNek1tTmtOR1oya2pJNklDWko1MmJ3VjNiakpDTHdvaklsQlhlVTUyYndWM2JqSnllY291cG9uUGFyYW0",
+                    ]
+                },
+                {
+                    "day": 6,
+                    "morningID": [
+                        "PTBuSXpRVFl6TW1OeVFXTm1sRE56WVdZNVVUTTBRRE14TURNalZqTm1Sek56SW1JNklDWko1MmJ3VjNiakpDTHdvaklsQlhlVTUyYndWM2JqSnllY291cG9uUGFyYW0",
+                        "PTBuSTJFak00UWpONUFUWmhaalo0WUdNaGRqWW1SVFoxRXpNek1tTmtOR1oya2pJNklDWko1MmJ3VjNiakpDTHdvaklsQlhlVTUyYndWM2JqSnllY291cG9uUGFyYW0",
+                    ]
+                },
+                {
+                    "day": 7,
+                    "morningID": [
+                        "PTBuSTFZbU15TWpad1VETmhaV04yWWpNNGtUT3hRallrQkROeE1XWjVRVE8wUW1JNklDWko1MmJ3VjNiakpDTHdvaklsQlhlVTUyYndWM2JqSnllY291cG9uUGFyYW0",
+                        "PTBuSTNRR01rRnpObFp6TWhKak5sSjJZNU1EWm1Sell3TVdNMFFETzVZR1p6UW1JNklDWko1MmJ3VjNiakpDTHdvaklsQlhlVTUyYndWM2JqSnllY291cG9uUGFyYW0",
+                    ]
+                },
+                {
+                    "day": 8,
+                    "morningID": [
+                        "PTBuSWxObU55Y1RaaGhUTXdRRE96Z3pZaWh6TjNRVE9rZGpNbU5tWWpaek1rVmpJNklDWko1MmJ3VjNiakpDTHdvaklsQlhlVTUyYndWM2JqSnllY291cG9uUGFyYW0",
+                        "PTBuSWpGaloyRVdZNU1UTW1sVFk1VUdaaUpETnlRVE5rRmpNa1p6TXpFalltZGpJNklDWko1MmJ3VjNiakpDTHdvaklsQlhlVTUyYndWM2JqSnllY291cG9uUGFyYW0",
+                    ]
+                }];
+
+                var redMorning = [],
+                    redNight = [];
+                for (var i in redQuan) {
+                    if (redQuan[i].day == oDay) {
+                        redMorning = redQuan[i].morningID;
+                        redNight = redQuan[i].nightID;
+                    }
+                }
+                $(".gome-coupon ul li").each(function (e) {
+                    $(this).attr("cms-attr-id", redMorning[e]);
+                })
+            }
+        })
+    </script>
+</div>
