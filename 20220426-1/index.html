@@ -1,6 +1,6 @@
 <!--
  * @Date: 2022-04-26 16:44:18
- * @LastEditTime: 2022-04-26 16:44:33
+ * @LastEditTime: 2022-04-26 16:50:26
  * @Author: WangYongJie
  * @Work-email: wangyongjie2@gome.com.cn
  * @Private-email: admin@xiaodongxier.com
@@ -21,6 +21,9 @@
 <body>
     <h1>12306网站404页面时间处理方案</h1>
     <p>https://www.12306.cn/mormhweb/logFiles/error.html</p>
+
+    ## 12306效果预览
+
     <div class="time">
         <script language="javascript">
             function initArray() {
@@ -50,5 +53,38 @@
             document.write(getFullYear(today) + "年" + isnMonths[today.getMonth()] + today.getDate() + "日" + " " + clckh + ":" + clckm + ":" + clcks + " " + isnDays[today.getDay()]);
         </script>
     </div>
+
+    ## 代码部分
+    <textarea>
+        <div class="time">
+            <script language="javascript">
+                function initArray() {
+                    for (i = 0; i < initArray.arguments.length; i++)
+                        this[i] = initArray.arguments[i];
+                }
+                var isnMonths = new initArray("1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月");
+                var isnDays = new initArray("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日");
+                today = new Date();
+                hrs = today.getHours();
+                min = today.getMinutes();
+                sec = today.getSeconds();
+                clckh = "" + ((hrs > 12) ? hrs - 12 : hrs);
+                clckm = ((min < 10) ? "0" : "") + min;
+                clcks = ((sec < 10) ? "0" : "") + sec;
+                clck = (hrs >= 12) ? "下午" : "上午";
+                var stnr = "";
+                var ns = "0123456789";
+                var a = "";
+    
+                function getFullYear(d) {
+                    yr = d.getYear();
+                    if (yr < 1000)
+                        yr += 1900;
+                    return yr;
+                }
+                document.write(getFullYear(today) + "年" + isnMonths[today.getMonth()] + today.getDate() + "日" + " " + clckh + ":" + clckm + ":" + clcks + " " + isnDays[today.getDay()]);
+            </script>
+        </div>
+    </textarea>
 </body>
 </html>
