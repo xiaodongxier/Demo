@@ -14,6 +14,7 @@
 
 
 <!-- 自定义部分 -->
+<link rel="shortcut icon" href="https://xiaodongxier.com/favicon.ico" type="image/x-icon">
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
     var _hmt = _hmt || [];
@@ -26,5 +27,5 @@
 </script>
 <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
 <script>LA.init({id: "Jf8rVs7oam5pFYhA",ck: "Jf8rVs7oam5pFYhA"})</script>
-<script id="LA-DATA-WIDGET" crossorigin="anonymous" charset="UTF-8" src="https://v6-widget.51.la/v6/Jf8rVs7oam5pFYhA/quote.js?theme=#FFFFFF,#FFFFFF,#FFFFFF,#FFFFFF,#FFFFFF,#FFFFFF,12&f=12&display=0,0,1,1,1,1,0,0"></script>
+<script id="LA-DATA-WIDGET" crossorigin="anonymous" charset="UTF-8" src="https://v6-widget.51.la/v6/Jf8rVs7oam5pFYhA/quote.js?theme=#1e6ab8,#1e6ab8,#1e6ab8,#1e6ab8,#1e6ab8,#1e6ab8,12&f=12&display=0,0,1,1,1,1,0,0"></script>
 <!-- 自定义部分 -->
