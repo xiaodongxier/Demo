@@ -1,0 +1,97 @@
+<!--
+ * @Date: 2022-04-26 16:44:18
+ * @LastEditTime: 2022-04-26 17:01:56
+ * @Author: WangYongJie
+ * @Work-email: wangyongjie2@gome.com.cn
+ * @Private-email: admin@xiaodongxier.com
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12306网站404页面时间处理方案</title>
+    <style>
+        h1,p {
+            color: #5777eb;
+        }
+        textarea {
+            width: 100%;
+            height: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <h1>12306网站404页面时间处理方案</h1>
+    <p>https://www.12306.cn/mormhweb/logFiles/error.html</p>
+
+    <br><br>
+    ## 12306效果预览
+    <br><br>
+    <div class="time">
+        <script language="javascript">
+            function initArray() {
+                for (i = 0; i < initArray.arguments.length; i++)
+                    this[i] = initArray.arguments[i];
+            }
+            var isnMonths = new initArray("1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月");
+            var isnDays = new initArray("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日");
+            today = new Date();
+            hrs = today.getHours();
+            min = today.getMinutes();
+            sec = today.getSeconds();
+            clckh = "" + ((hrs > 12) ? hrs - 12 : hrs);
+            clckm = ((min < 10) ? "0" : "") + min;
+            clcks = ((sec < 10) ? "0" : "") + sec;
+            clck = (hrs >= 12) ? "下午" : "上午";
+            var stnr = "";
+            var ns = "0123456789";
+            var a = "";
+
+            function getFullYear(d) {
+                yr = d.getYear();
+                if (yr < 1000)
+                    yr += 1900;
+                return yr;
+            }
+            document.write(getFullYear(today) + "年" + isnMonths[today.getMonth()] + today.getDate() + "日" + " " + clckh + ":" + clckm + ":" + clcks + " " + isnDays[today.getDay()]);
+        </script>
+    </div>
+
+    <br><br>
+    ## 源码
+    <br><br>
+    <textarea>
+        <div class="time">
+            <script language="javascript">
+                function initArray() {
+                    for (i = 0; i < initArray.arguments.length; i++)
+                        this[i] = initArray.arguments[i];
+                }
+                var isnMonths = new initArray("1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月");
+                var isnDays = new initArray("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日");
+                today = new Date();
+                hrs = today.getHours();
+                min = today.getMinutes();
+                sec = today.getSeconds();
+                clckh = "" + ((hrs > 12) ? hrs - 12 : hrs);
+                clckm = ((min < 10) ? "0" : "") + min;
+                clcks = ((sec < 10) ? "0" : "") + sec;
+                clck = (hrs >= 12) ? "下午" : "上午";
+                var stnr = "";
+                var ns = "0123456789";
+                var a = "";
+    
+                function getFullYear(d) {
+                    yr = d.getYear();
+                    if (yr < 1000)
+                        yr += 1900;
+                    return yr;
+                }
+                document.write(getFullYear(today) + "年" + isnMonths[today.getMonth()] + today.getDate() + "日" + " " + clckh + ":" + clckm + ":" + clcks + " " + isnDays[today.getDay()]);
+            </script>
+        </div>
+    </textarea>
+</body>
+</html>

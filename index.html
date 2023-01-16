@@ -1,0 +1,125 @@
+<!--
+ * @Date: 2023-01-16 10:30:52
+ * @LastEditTime: 2023-01-16 11:05:54
+ * @Author: WangYongJie
+ * @Work-email: wangyongjie2@gome.com.cn
+ * @Private-email: admin@xiaodongxier.com
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://xiaodongxier.com/favicon.ico" type="image/x-icon">
+  <title>冷知识/基础知识/效果预览</title>
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?c21a66ab5099adc6454e09ad1f8301e7";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+  <script>LA.init({id: "Jf8rVs7oam5pFYhA",ck: "Jf8rVs7oam5pFYhA"})</script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="./index.js"></script>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      text-decoration: none;
+      color: #000;
+    }
+
+    a {
+      display: block;
+      color: #000;
+    }
+
+    body {
+      overflow: hidden;
+    }
+
+    #app {
+      display: flex;
+      background: #ccc;
+      width: calc(100vw - 10px);
+      height: calc(100vh - 10px);
+      margin: 5px auto;
+      border-radius: 10px;
+    }
+
+    #app .listWrap {
+      flex: 1;
+      margin: 7px;
+      background: #ddd;
+    }
+
+    #app .listWrap.left {}
+
+    #app .listWrap.center {
+      margin: 7px 0;
+    }
+
+    #app .listWrap.right {}
+
+    #app .listWrap h2 {
+      text-align: center;
+      font-size: 16px;
+      line-height: 25px;
+    }
+
+
+    #app .listWrap .listScroll {
+      height: calc(100vh - 55px);
+      overflow: scroll;
+      margin: 0 5px;
+    }
+
+    #app .listWrap .listScroll ul li {
+      line-height: 35px;
+      margin-bottom: 5px;
+    }
+
+    #app .listWrap .listScroll ul li:hover a {
+      color: #15ae39;
+    }
+
+    #app .listWrap .listScroll ul li:nth-child(odd) {
+      background: #fff;
+    }
+
+    #app .listWrap .listScroll ul li:nth-child(even) {
+      background: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div class="listWrap left">
+      <h2>HTML</h2>
+      <div class="listScroll">
+        <ul class="htmlWrap"></ul>
+      </div>
+    </div>
+    <div class="listWrap center">
+      <h2>CSS</h2>
+      <div class="listScroll">
+        <ul class="cssWrap"></ul>
+      </div>
+    </div>
+    <div class="listWrap right">
+      <h2>JAVASCRIPT</h2>
+      <div class="listScroll">
+        <ul class="jsWrap"></ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
