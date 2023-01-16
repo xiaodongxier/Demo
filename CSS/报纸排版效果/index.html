@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>报纸排版效果</title>
+<style type="text/css">
+body,div,h1,h2,p{
+	margin:0;
+	padding:0;}
+article,footer{
+	display:block;}
+body{
+	font:1em Georgia, "Times New Roman", Times, serif;
+	color:#333;
+	background-color:#333;}
+h1{
+	font-size:2rem;
+	color:#1e1e1e;
+	margin-bottom:1em;
+	/*column-span:all;跨栏*/}
+h2{
+	font-size:1.5rem;
+	margin-bottom:0.5em;}
+p{
+	font-size:1rem;
+	line-height:1.5;
+	margin-bottom:1em;
+	/*break-inside:avoid;防止段落内部分列*/
+	/*text-align:justify;两端对齐*/}
+.intro::first-letter{
+	font-size:3em;
+	float:left;/*首字下沉利用浮动实现，initial-letter只有safari支持*/
+	margin-right:0.1em;
+	line-height:1em;
+	}
+#wrap{
+	box-sizing:border-box;
+	width:1258px;
+	margin:0 auto;
+	padding:1.5em;
+	background-color:#E7DED1;
+	column-count:3;/*多列的数值，3列*/
+	column-width:auto;/*列的宽度*/
+	column-gap:2em;/*列与列之间的间隔*/
+	column-rule:1px solid rgba(0,0,0,.3);/*列与列之间的分割线，不占空间*/}
+#wrap img{
+	max-width:100%;/*图片在列中的宽度最大为列宽的100%，如果图片大于列宽也会正确显示，否则浏览器会自动裁剪掉多余的部分*/}
+footer{
+	font-family:"microsoft Yahei";
+	column-span:all;/*跨列*/
+	margin-top:2em;
+	}	
+footer p{
+	text-align:center;
+	margin-bottom:.7em;}
+footer a{
+	color:#666;
+	text-decoration:none;}
+footer a:hover{
+	color:#333;}
+
+
+</style>
+</head>
+
+<body>
+<div id="wrap">
+  <article>
+   	<h1>Prince William says keeping a stiff upper lip can damage health</h1>
+      <p><img src="images/william.jpg" alt="william" /></p>
+      <p class="intro">The British "stiff upper lip" should not be allowed to endanger mental health, the Duke of Cambridge has said.</p>
+        <p>He said he wanted his children to grow up able to express their feelings.</p>
+        <p>Prince William has also teamed up with pop star Lady Gaga - in a video call they spoke about the importance of people talking about their struggles.</p>
+        <p>It comes after Prince Harry revealed he sought help after nearly 20 years &quot;not thinking&quot; about the death of their mother, Diana, Princess of Wales.</p>
+        <h2>'Tipping point'</h2>
+        <p>Prince William's comments on the "stiff upper lip" came in an interview - alongside Prince Harry - with a magazine produced by the charity Campaign Against Living Miserably (Calm), which is dedicated to preventing male suicide.</p>
+        <ul>
+        	<li>Prince Harry 'in total chaos' over mother Diana's death
+</li>
+			<li>'Like Prince Harry, I blocked out my mum's death'</li>
+        </ul>
+        <p>Prince William talked about his "tipping point", which was his exposure to suicide - the biggest killer of men aged under 45 in the UK - through his work as an air ambulance pilot.</p>
+		<p>He told Calm that while there might be a time and a place for the "stiff upper lip", it should not be at the expense of people's health.</p>
+	<p>The future king and his brother are using the intense interest they generate to focus attention on a cause they are increasingly passionate about, BBC royal correspondent Peter Hunt said.</p>
+        <h2>Lady Gaga call</h2>
+        <p>Prince William spoke to Lady Gaga, as part of the Heads Together #oktosay campaign to encourage people to speak out about their mental health challenges.</p>
+        <p>The pair discussed how speaking freely on mental health problems can help shatter the stigma around them.</p>
+        <p><img src="images/lady gaga.jpg" alt="lady gaga" /></p>
+        <p>Lady Gaga said the series of films produced by the charity told &quot;beautiful stories&quot;.</p>
+        <p>&quot;It reminded me how much my mental health changing changed my life,&quot; she told him, from her home in Los Angeles.</p>
+        <p>&quot;There's a lot of shame attached to mental illness, you feel like something's wrong with you. In my life I go 'look at all these beautiful, wonderful things that I have, I should be so happy'.</p>
+        <p>&quot;But you can't help it if in the morning when you wake up you are so tired, so sad, so full of anxiety and the shakes that you can barely think.&quot;</p>
+    <p>She said discussing her mental health &quot;was like saying, this is a part of me, and that's ok&quot;.</p>
+    <p><img src="images/bbc news daily.png" alt="bbc news daily" /></p>
+        <p><strong>
+Sign-up to get news from the BBC in your inbox, each weekday morning</strong></p>
+        <p>The duke has also said it was important for role models to open up about their mental health - including grime artist Stormzy.</p>
+   	<p>&quot;The recent interview by Stormzy about his depression was incredibly powerful and will help young men feel that it's a sign of strength to talk about and look after your mind as well as your body,&quot; he said.</p>
+        <h2>'Close to breakdown'</h2>
+        <p>Prince William said he and the Duchess of Cambridge wanted their children - George and Charlotte - to grow up able to talk about their emotions and feelings.</p>
+        <p>Prince Harry has acknowledged that he did not do that.</p>
+    	<p>In an interview with the Daily Telegraphon Monday, he said it had not been until his late 20s that he had processed the grief of losing his mother when he was 12 in 1997.</p>
+    	<p>Before reaching that point, he had endured two years of &quot;total chaos&quot; and come close to a &quot;complete breakdown&quot;, he said.</p>
+        <p><img src="images/george.jpg" alt="george" /></p>
+    	<p>Prime Minister Theresa May praised the princes speaking out about mental health issues.</p>
+    	<p>&quot;The bravery of those in public positions who speak out about their experiences helps smash the stigma around mental health and will help thousands of people to realise they are not alone.&quot;</p>
+    	<p>Mental health charity Mind described Prince Harry's interview as a &quot;true turning point&quot;.</p>
+    	<p>The two princes, along with the Duchess of Cambridge, are promoting the Heads Together mental health campaign, the London Marathon's charity of the year.</p>
+    	<p><em>A two-part series, Mind Over Marathon, starts on BBC One at 21:00 BST on Thursday 20 April, as part of a </em>Minds Matter series of programming about mental health issues.</p>
+  </article>
+  <footer>
+       <p>赵老师web前端开发教学博客</p>
+       <p><a href="http://www.mrszhao.com" target="_blank">ww.mrszhao.com</a></p>
+</footer>
+</div>
+</body>
+</html>
