@@ -1,0 +1,78 @@
+<!--
+ * @Date: 2023-07-11 08:32:55
+ * @LastEditTime: 2023-07-11 09:02:09
+ * @Author: WangYongJie
+ * @Email: admin@xiaodongxier.com
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css等比缩放</title>
+  <script src="https://cdn.xiaodongxier.com/jquery/3.7.0/jquery.min.js"></script>
+  <style>
+    .app {
+      width: 30vw;
+      border: 10px solid #ccc;
+      font-size: 0;
+      position: relative;
+    }
+
+    .app::before{
+      content: "等比缩放效果";
+      font-size: 20px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: #fff;
+      padding: 1px 2px;
+    }
+
+    .app1 {
+      aspect-ratio: 16/9;
+    }
+
+    .app2 {
+      height: 300px;
+      color: red;
+    }
+
+    .app2::before{
+      content: "非等比缩放效果";
+    }
+
+    .app img {
+      /* display: block; */
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="app app1">
+      <img src="https://api.wangyongjie.cn/RandomImg/" alt="等比缩放">
+  </div>
+  <br>
+  <div class="app app2">
+    <img src="https://api.wangyongjie.cn/RandomImg/" alt="等比缩放">
+</div>
+  <pre>
+    知识点：
+    1. 通过css的aspect-ratio: 16/9;属性可以控制等比缩放
+      1. 宽度应是 %、vw 单位，不能是px
+      2. 无需设置高度
+      3. mdn(aspect-ratio)：https://developer.mozilla.org/zh-CN/docs/Web/CSS/aspect-ratio
+    2. 解决img图片下面有一条缝隙的问题
+      1. 给父元素设置font-size:0
+      2. img设置熟悉为display:block
+  </pre>
+  <script>
+    $(window).resize(function(){
+      console.log("width", $("#app").eq(0).width())
+      console.log("height", $("#app").eq(0).height())
+      console.log('----------------------------------------------------------------')
+    })
+  </script>
+</body>
+</html>
